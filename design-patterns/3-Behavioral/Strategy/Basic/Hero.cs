@@ -28,14 +28,12 @@ namespace design_patterns.Behavioral.Strategy.Basic
     public class FlyMan: Hero {
         public FlyMan() : base(new Fly())
         {
-            
         }
     } 
 
     public class FishMan: Hero {
         public FishMan() : base(new Swim())
         {
-            
         }
     }     
 }

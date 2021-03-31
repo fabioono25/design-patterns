@@ -4,9 +4,10 @@ namespace design_patterns.Behavioral.Strategy.Basic
 {
     public interface IHero
     {
-        string DoAction();
+        // this will change - ex: log. No need to redeploy in this case
+        string DoAction(); // command
 
         // strategy
-        void ChangeSuperPower(ISuperPower power);
+        void ChangeSuperPower(ISuperPower power); // change
     }
 }
