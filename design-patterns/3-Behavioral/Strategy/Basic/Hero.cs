@@ -8,10 +8,12 @@ namespace design_patterns.Behavioral.Strategy.Basic
         private ISuperPower _power;
         private RegularPerson regularPerson;
 
+        // set strategy by constructor
         public Hero(): this(new RegularPerson())
         {
         }
-
+        
+        // set strategy by constructor
         public Hero(ISuperPower power)
         {
             _power = power;
