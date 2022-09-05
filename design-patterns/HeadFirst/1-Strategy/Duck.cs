@@ -7,15 +7,15 @@ namespace design_patterns.HeadFirst.DucksProblem
 {
     public abstract class Duck
     {
-        public FlyBehavior flyBehavior;
-        public QuackBehavior quackBehavior;
+        public FlyStrategy flyStrategy;
+        public QuackStrategy quackStrategy;
 
         public Duck()
         {
         }
 
         public void performQuack() {
-            quackBehavior.quack();
+            quackStrategy.quack();
         }
 
         public void swim() {
@@ -27,27 +27,27 @@ namespace design_patterns.HeadFirst.DucksProblem
         // new behavior
         public void performFly()
         {
-            flyBehavior.fly();
+            flyStrategy.fly();
         }
 
         // adding behavior dynamically
-        public void setFlyBehavior(FlyBehavior fb)
+        public void setFlyStrategy(FlyStrategy fb)
         {
-            this.flyBehavior = fb;
+            this.flyStrategy = fb;
         }
 
-        public void setQuackBehavior(QuackBehavior qb)
+        public void setQuackStrategy(QuackStrategy qb)
         {
-            this.quackBehavior = qb;
+            this.quackStrategy = qb;
         }
     }
 
-    public interface FlyBehavior
+    public interface FlyStrategy
     {
         public void fly();
     }
 
-    public class FlyWithWings : FlyBehavior
+    public class FlyWithWings : FlyStrategy
     {
         public void fly()
         {
@@ -55,7 +55,7 @@ namespace design_patterns.HeadFirst.DucksProblem
         }
     }
 
-    public class FlyNoWay : FlyBehavior
+    public class FlyNoWay : FlyStrategy
     {
         public void fly()
         {
@@ -63,7 +63,7 @@ namespace design_patterns.HeadFirst.DucksProblem
         }
     }
 
-    public class FlyRocket : FlyBehavior
+    public class FlyRocket : FlyStrategy
     {
         public void fly()
         {
@@ -71,12 +71,12 @@ namespace design_patterns.HeadFirst.DucksProblem
         }
     }
 
-    public interface QuackBehavior
+    public interface QuackStrategy
     {
         public void quack();
     }
 
-    public class Quack : QuackBehavior
+    public class Quack : QuackStrategy
     {
         public void quack()
         {
@@ -84,7 +84,7 @@ namespace design_patterns.HeadFirst.DucksProblem
         }
     }
 
-    public class Squeak : QuackBehavior
+    public class Squeak : QuackStrategy
     {
         public void quack()
         {
@@ -92,7 +92,7 @@ namespace design_patterns.HeadFirst.DucksProblem
         }
     }
 
-    public class MuteQuack : QuackBehavior
+    public class MuteQuack : QuackStrategy
     {
         public void quack()
         {
@@ -103,8 +103,8 @@ namespace design_patterns.HeadFirst.DucksProblem
     public class MallardDuck : Duck {
         public MallardDuck()
         {
-            quackBehavior = new Quack();
-            flyBehavior = new FlyWithWings();
+            quackStrategy = new Quack();
+            flyStrategy = new FlyWithWings();
         }
 
         public override void display()
@@ -117,8 +117,8 @@ namespace design_patterns.HeadFirst.DucksProblem
     {
         public ModelDuck()
         {
-            flyBehavior = new FlyNoWay();
-            quackBehavior = new Quack();
+            flyStrategy = new FlyNoWay();
+            quackStrategy = new Quack();
         }
 
         public override void display()

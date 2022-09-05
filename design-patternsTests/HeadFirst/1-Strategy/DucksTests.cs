@@ -19,7 +19,7 @@ namespace design_patternsTests.HeadFirst.DucksProblem
             var modelDuck = new ModelDuck();
             modelDuck.display();
             modelDuck.performFly();
-            modelDuck.setFlyBehavior(new FlyRocket());
+            modelDuck.setFlyStrategy(new FlyRocket());
             modelDuck.performFly();
         }        
     }
