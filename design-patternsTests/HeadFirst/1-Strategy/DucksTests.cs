@@ -14,6 +14,13 @@ namespace design_patternsTests.HeadFirst.DucksProblem
             mallardDuck.display();
             mallardDuck.performFly();
             mallardDuck.performQuack();
+
+            // now, we will test the behavior being changed during runtime
+            var modelDuck = new ModelDuck();
+            modelDuck.display();
+            modelDuck.performFly();
+            modelDuck.setFlyBehavior(new FlyRocket());
+            modelDuck.performFly();
         }        
     }
 }
