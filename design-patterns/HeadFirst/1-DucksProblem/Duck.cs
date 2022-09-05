@@ -20,7 +20,7 @@ namespace design_patterns.HeadFirst.DucksProblem
         }
 
         // new behavior
-        public void Fly()
+        public virtual void Fly()
         {
             System.Console.WriteLine("Fly from Duck class!");
         }
@@ -35,6 +35,9 @@ namespace design_patterns.HeadFirst.DucksProblem
     }
 
     public class RubberDuck : Duck {
-
+        public override void Fly()
+        {
+            Console.WriteLine("I am a rubber duck and cannot fly (overriden from base class)!");
+        }
     }
 }
