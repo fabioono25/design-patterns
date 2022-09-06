@@ -4,4 +4,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>design_patterns</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="HeadFirst\2-Observer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HeadFirst\2-Observer\" />
+  </ItemGroup>
 </Project>

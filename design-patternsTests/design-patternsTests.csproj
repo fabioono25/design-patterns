@@ -24,4 +24,10 @@
     <ProjectReference Include="..\design-patterns\design-patterns.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="HeadFirst\2-Observer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HeadFirst\2-Observer\" />
+  </ItemGroup>
 </Project>
