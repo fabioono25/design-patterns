@@ -15,8 +15,9 @@ namespace design_patterns.HeadFirst.Observer
             weatherData.registerObserver(this);
         }
 
-        public void update(float temp, float humidity, float pressure)
+        public void update()
         {
+            var temp = this.weatherData.getTemperature();
             tempSum += temp;
             numReadings++;
 

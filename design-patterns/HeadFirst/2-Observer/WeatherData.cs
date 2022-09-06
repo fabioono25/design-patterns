@@ -19,7 +19,9 @@ namespace design_patterns.HeadFirst.Observer
         {
             foreach (var observer in _observers)
             {
-                observer.update(temperature, humidity, pressure);
+                // TODO: remove the fixed arguments
+                // observer.update(temperature, humidity, pressure);
+                observer.update();
             }
         }
 
@@ -45,6 +47,21 @@ namespace design_patterns.HeadFirst.Observer
             this.pressure = pressure;
             measurementsChanged();
         }
+
+        internal float getTemperature()
+        {
+            return this.temperature;
+        }
+
+        internal float getHumidity()
+        {
+            return this.humidity;
+        }
+
+        internal float getPressure()
+        {
+            return this.pressure;
+        }
     }
 
     public interface Subject
@@ -57,7 +74,8 @@ namespace design_patterns.HeadFirst.Observer
     public interface Observer
     {
         // TODO: if my display doesn't use some of these parameters?!?
-        public void update(float temp, float humidity, float pressure);
+        //public void update(float temp, float humidity, float pressure);
+        public void update();
     }
 
     public interface DisplayElement
@@ -78,10 +96,11 @@ namespace design_patterns.HeadFirst.Observer
         }
 
         // we don't use need pressure here
-        public void update(float temp, float humidity, float pressure)
+        public void update()
         {
-            _temperature = temp;
-            _humidity = humidity;
+            // now the Observer can pull needed data from Subject
+            _temperature = _weatherData.getTemperature();
+            _humidity = _weatherData.getHumidity();
             display();
         }
 
