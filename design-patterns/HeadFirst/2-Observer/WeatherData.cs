@@ -3,36 +3,15 @@ using System.Collections.Generic;
 
 namespace design_patterns.HeadFirst.Observer
 {
+    // Observable
     public class WeatherData : Subject
     {
-        private List<Observer> _observers;
         private float temperature;
         private float humidity;
         private float pressure;
 
-        public WeatherData()
+        public WeatherData() : base()
         {
-            _observers = new List<Observer>();
-        }
-
-        public void notifyObservers()
-        {
-            foreach (var observer in _observers)
-            {
-                // TODO: remove the fixed arguments
-                // observer.update(temperature, humidity, pressure);
-                observer.update();
-            }
-        }
-
-        public void registerObserver(Observer o)
-        {
-            _observers.Add(o);
-        }
-
-        public void removeObserver(Observer o)
-        {
-            _observers.Remove(o);
         }
 
         public void measurementsChanged()
@@ -64,11 +43,33 @@ namespace design_patterns.HeadFirst.Observer
         }
     }
 
-    public interface Subject
+    // Observable
+    public abstract class Subject
     {
-        public void registerObserver(Observer o);
-        public void removeObserver(Observer o);
-        public void notifyObservers(); // when Subject's state has changed
+        private List<Observer> _observers;
+
+        public Subject()
+        {
+          _observers = new List<Observer>();
+        }
+
+        public void registerObserver(Observer o)
+        {
+          _observers.Add(o);
+        }
+
+        public void removeObserver(Observer o)
+        {
+          _observers.Remove(o);
+        }
+
+        public void notifyObservers()
+        {
+          foreach (var observer in _observers)
+          {
+            observer.update();
+          }
+        }
     }
 
     public interface Observer
