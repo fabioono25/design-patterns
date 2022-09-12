@@ -27,9 +27,13 @@
   <ItemGroup>
     <None Remove="HeadFirst\2-Observer\" />
     <None Remove="HeadFirst\3-Decorator\" />
+    <None Remove="HeadFirst\4-Factory\" />
+    <None Remove="HeadFirst\4-Factory\1-SimpleFactory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
     <Folder Include="HeadFirst\3-Decorator\" />
+    <Folder Include="HeadFirst\4-Factory\" />
+    <Folder Include="HeadFirst\4-Factory\1-SimpleFactory\" />
   </ItemGroup>
 </Project>
