@@ -29,11 +29,13 @@
     <None Remove="HeadFirst\3-Decorator\" />
     <None Remove="HeadFirst\4-Factory\" />
     <None Remove="HeadFirst\4-Factory\1-SimpleFactory\" />
+    <None Remove="HeadFirst\4-Factory\2-FactoryMethod\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
     <Folder Include="HeadFirst\3-Decorator\" />
     <Folder Include="HeadFirst\4-Factory\" />
     <Folder Include="HeadFirst\4-Factory\1-SimpleFactory\" />
+    <Folder Include="HeadFirst\4-Factory\2-FactoryMethod\" />
   </ItemGroup>
 </Project>
