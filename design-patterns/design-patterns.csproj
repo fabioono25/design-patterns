@@ -10,6 +10,7 @@
     <None Remove="HeadFirst\4-Factory\" />
     <None Remove="HeadFirst\4-Factory\1-SimpleFactory\" />
     <None Remove="HeadFirst\4-Factory\2-FactoryMethod\" />
+    <None Remove="HeadFirst\4-Factory\3-AbstractFactory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -17,5 +18,6 @@
     <Folder Include="HeadFirst\4-Factory\" />
     <Folder Include="HeadFirst\4-Factory\1-SimpleFactory\" />
     <Folder Include="HeadFirst\4-Factory\2-FactoryMethod\" />
+    <Folder Include="HeadFirst\4-Factory\3-AbstractFactory\" />
   </ItemGroup>
 </Project>

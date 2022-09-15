@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Xml.Linq;
-using design_patterns.HeadFirst.Factory.SimpleFactory;
 
 namespace design_patterns.HeadFirst.Factory.FactoryMethod
 {
