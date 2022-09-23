@@ -7,6 +7,7 @@ namespace design_patterns.HeadFirst.Command
     {
         Command[] onCommands;
         Command[] offCommands;
+        Command undoCommand;
 
         public RemoteControl()
         {
@@ -19,6 +20,8 @@ namespace design_patterns.HeadFirst.Command
                 onCommands[i] = noCommand;
                 offCommands[i] = noCommand;
             }
+
+            undoCommand = noCommand;
         }
 
         public void setCommand(int slot, Command onCommand, Command offCommand)
@@ -30,11 +33,18 @@ namespace design_patterns.HeadFirst.Command
         public void onButtonWasPushed(int slot)
         {
             onCommands[slot].Execute();
+            undoCommand = onCommands[slot];
         }
 
         public void offButtonWasPushed(int slot)
         {
             offCommands[slot].Execute();
+            undoCommand = offCommands[slot];
+        }
+
+        public void undoButtonWasPushed()
+        {
+            undoCommand.Undo();
         }
 
         public override string ToString()

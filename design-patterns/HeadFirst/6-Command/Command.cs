@@ -5,6 +5,7 @@ namespace design_patterns.HeadFirst.Command
     public interface Command
     {
         public void Execute();
+        public void Undo();
     }
 
     public class NoCommand : Command
@@ -12,6 +13,11 @@ namespace design_patterns.HeadFirst.Command
         public void Execute()
         {
             Console.WriteLine("No command executed");
+        }
+
+        public void Undo()
+        {
+            Console.WriteLine("Undo from nothing.");
         }
     }
 
@@ -29,6 +35,11 @@ namespace design_patterns.HeadFirst.Command
         {
             light.on();
         }
+
+        public void Undo()
+        {
+            light.off();
+        }
     }
 
     public class LightOffCommand : Command
@@ -43,6 +54,11 @@ namespace design_patterns.HeadFirst.Command
         public void Execute()
         {
             light.off();
+        }
+
+        public void Undo()
+        {
+            light.on();
         }
     }
 
@@ -79,6 +95,11 @@ namespace design_patterns.HeadFirst.Command
         {
             garageDoor.open();
         }
+
+        public void Undo()
+        {
+            garageDoor.close();
+        }
     }
 
     public class GarageDoorCloseCommand : Command
@@ -93,6 +114,11 @@ namespace design_patterns.HeadFirst.Command
         public void Execute()
         {
             garageDoor.close();
+        }
+
+        public void Undo()
+        {
+            garageDoor.open();
         }
     }
 
@@ -115,13 +141,12 @@ namespace design_patterns.HeadFirst.Command
         }
     }
 
+    public enum CeilingFanSpeed { LOW, MEDIUM, HIGH}
+
     public class CeilingFan
     {
         String location = "";
-        int level;
-        public static int HIGH = 2;
-        public static int MEDIUM = 1;
-        public static int LOW = 0;
+        CeilingFanSpeed level;
 
         public CeilingFan(String location)
         {
@@ -131,7 +156,7 @@ namespace design_patterns.HeadFirst.Command
         public void high()
         {
             // turns the ceiling fan on to high
-            level = HIGH;
+            level = CeilingFanSpeed.HIGH;
             Console.WriteLine(location + " ceiling fan is on high");
 
         }
@@ -139,14 +164,14 @@ namespace design_patterns.HeadFirst.Command
         public void medium()
         {
             // turns the ceiling fan on to medium
-            level = MEDIUM;
+            level = CeilingFanSpeed.MEDIUM;
             Console.WriteLine(location + " ceiling fan is on medium");
         }
 
         public void low()
         {
             // turns the ceiling fan on to low
-            level = LOW;
+            level = CeilingFanSpeed.LOW;
             Console.WriteLine(location + " ceiling fan is on low");
         }
 
@@ -157,28 +182,70 @@ namespace design_patterns.HeadFirst.Command
             Console.WriteLine(location + " ceiling fan is off");
         }
 
-        public int getSpeed()
+        public CeilingFanSpeed getSpeed()
         {
             return level;
         }
     }
 
-    public class CeilingFanOnCommand : Command
+    public class CeilingFanHighCommand : Command
     {
         CeilingFan ceilingFan;
+        CeilingFanSpeed prevSpeed;
 
-        public CeilingFanOnCommand(CeilingFan ceilingFan)
+        public CeilingFanHighCommand(CeilingFan ceilingFan)
         {
             this.ceilingFan = ceilingFan;
         }
         public void Execute()
         {
+            prevSpeed = ceilingFan.getSpeed();
             ceilingFan.high();
         }
+
+        public void Undo()
+        {
+            switch (prevSpeed)
+            {
+                case CeilingFanSpeed.HIGH: ceilingFan.high(); break;
+                case CeilingFanSpeed.MEDIUM: ceilingFan.medium(); break;
+                case CeilingFanSpeed.LOW: ceilingFan.low(); break;
+                default: ceilingFan.off(); break;
+            }
+        }
     }
+
+    public class CeilingFanMediumCommand : Command
+    {
+        CeilingFan ceilingFan;
+        CeilingFanSpeed prevSpeed;
+
+        public CeilingFanMediumCommand(CeilingFan ceilingFan)
+        {
+            this.ceilingFan = ceilingFan;
+        }
+        public void Execute()
+        {
+            prevSpeed = ceilingFan.getSpeed();
+            ceilingFan.medium();
+        }
+
+        public void Undo()
+        {
+            switch (prevSpeed)
+            {
+                case CeilingFanSpeed.HIGH: ceilingFan.high(); break;
+                case CeilingFanSpeed.MEDIUM: ceilingFan.medium(); break;
+                case CeilingFanSpeed.LOW: ceilingFan.low(); break;
+                default: ceilingFan.off(); break;
+            }
+        }
+    }
+
     public class CeilingFanOffCommand : Command
     {
         CeilingFan ceilingFan;
+        CeilingFanSpeed prevSpeed;
 
         public CeilingFanOffCommand(CeilingFan ceilingFan)
         {
@@ -186,7 +253,19 @@ namespace design_patterns.HeadFirst.Command
         }
         public void Execute()
         {
-            ceilingFan.high();
+            prevSpeed = ceilingFan.getSpeed();
+            ceilingFan.off();
+        }
+
+        public void Undo()
+        {
+            switch (prevSpeed)
+            {
+                case CeilingFanSpeed.HIGH: ceilingFan.high(); break;
+                case CeilingFanSpeed.MEDIUM: ceilingFan.medium(); break;
+                case CeilingFanSpeed.LOW: ceilingFan.low(); break;
+                default: ceilingFan.off(); break;
+            }
         }
     }
 }

@@ -11,10 +11,10 @@ namespace design_patternsTests.HeadFirst.Command
         public void WorkingWithSimpleCommand()
         {
             var remote = new SimpleRemoteControl();
-            var light = new Light();
+            var light = new Light("");
             var lightOn = new LightOnCommand(light);
 
-            var garageDoor = new GarageDoor();
+            var garageDoor = new GarageDoor("");
             var garageDoorOpen = new GarageDoorOpenCommand(garageDoor);
 
             remote.setCommand(lightOn);
@@ -47,8 +47,8 @@ namespace design_patternsTests.HeadFirst.Command
             GarageDoorCloseCommand garageDoorDown =
                     new GarageDoorCloseCommand(garageDoor);
 
-            CeilingFanOnCommand ceilingFanOn =
-                    new CeilingFanOnCommand(ceilingFan);
+            CeilingFanHighCommand ceilingFanOn =
+                    new CeilingFanHighCommand(ceilingFan);
             CeilingFanOffCommand ceilingFanOff =
                     new CeilingFanOffCommand(ceilingFan);
 
@@ -66,6 +66,30 @@ namespace design_patternsTests.HeadFirst.Command
             remoteControl.offButtonWasPushed(2);
             remoteControl.onButtonWasPushed(3);
             remoteControl.offButtonWasPushed(3);
+        }
+
+        [Fact]
+        public void WorkingWithUndoCommand()
+        {
+            var remoteControl = new RemoteControl();
+
+            Light livingRoomLight = new Light("Living Room");
+
+            LightOnCommand livingRoomLightOn =
+                    new LightOnCommand(livingRoomLight);
+            LightOffCommand livingRoomLightOff =
+                    new LightOffCommand(livingRoomLight);
+
+            remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff);
+
+            remoteControl.onButtonWasPushed(0);
+            remoteControl.offButtonWasPushed(0);
+            Console.WriteLine(remoteControl);
+            remoteControl.undoButtonWasPushed();
+            remoteControl.offButtonWasPushed(0);
+            remoteControl.onButtonWasPushed(0);
+            Console.WriteLine(remoteControl);
+            remoteControl.undoButtonWasPushed();
         }
     }
 }
