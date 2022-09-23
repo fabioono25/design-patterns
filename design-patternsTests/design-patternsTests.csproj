@@ -32,6 +32,7 @@
     <None Remove="HeadFirst\4-Factory\2-FactoryMethod\" />
     <None Remove="HeadFirst\4-Factory\3-AbstractFactory\" />
     <None Remove="HeadFirst\5-Singleton\" />
+    <None Remove="HeadFirst\Command\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -41,5 +42,6 @@
     <Folder Include="HeadFirst\4-Factory\2-FactoryMethod\" />
     <Folder Include="HeadFirst\4-Factory\3-AbstractFactory\" />
     <Folder Include="HeadFirst\5-Singleton\" />
+    <Folder Include="HeadFirst\6-Command\" />
   </ItemGroup>
 </Project>
