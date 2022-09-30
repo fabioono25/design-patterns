@@ -46,4 +46,7 @@
     <Folder Include="HeadFirst\6-Command\" />
     <Folder Include="HeadFirst\7-Adapter\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="3-Behavioral\Strategy\StrategyTests.cs" />
+  </ItemGroup>
 </Project>
