@@ -70,9 +70,6 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 [Source Making](https://sourcemaking.com/design_patterns/strategy)
 
-[DoFactory](https://www.dofactory.com/net/strategy-design-pattern)
-
-
 
 ## Observer Pattern
 
@@ -118,26 +115,59 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 [Source Making](https://sourcemaking.com/design_patterns/observer)
 
-[TutorialPoint](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm
-)
 
 
 ## Decorator Pattern
 
 ### Definition
 
+> Attaches **additional responsibilities** to an object dynamically. Decorator provides a flexible alternative to subclassing by extending funcionality.
 > 
+> Composed by Components and Decorators (wrapper for a component). The Component is a wrapped class that defines the basic behavior, which can be altered by Decorators.
+> 
+> The Decorator IS-A Component and also HAS-A Component. Decorator behaves as a Component but also has a reference to another concrete Component (that can be another Decorator).
+> 
+> Using composition rather than inheritance.
+> 
+> Avoid class explosion by adding new behaviors (or combinations).
+> 
+> Enforcing OCP, where each class is isolated from the new extensions.
+> 
+> The additional responsibilities are defined by the Decorators.
+> 
+> If you have a concrete Decorator representing a cost, you will return the cost of it, in relation to the thing that is is decorating (the cost of another Decorator or Component).
 
-> 
+> Composite and Decorator are related (both rely on recursive composition to organize objects). Decorator, however, has only one Coponent and adds additional responsibilities to the wrapped object, while Composite just "sums up" its children's results.
 
 ### Model
 
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/ddecorator.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/decorator2.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/decorator3.png)
 
 ### Real-World Examples of Use
 
-* **ss**: ss
+* **Notification**: if you want to add dynamically different combinations of notifications (via email, SMS, WhatApp, Facebook), you can define a BaseNotifierDecorator that implements INotifier interface (the Component), and wrap different concrete Decorators to be used (FacebookDecorator, WhatsAppDecorator, EmailDecorator).
+
+* **Pizza**: where you can have a combination of pizza varieties, each of them with different and combined toppings (ToppingsDecorator).
+
+* **Encryption System**: where you can add different types of encryption algorithms.
+
+* **Text Editor**: you can format the same text in different ways (Bold, Italic, Underline, Color).
+
 
 ### Links
+
+[Head First - Decorator Pattern Explained](https://www.youtube.com/watch?v=GCraGHx6gso)
+
+[A good video about Decorator Pattern](https://www.youtube.com/watch?v=v6tpISNjHf8)
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/decorator)
+
+[Source Making](https://sourcemaking.com/design_patterns/decorator)
+
 
 
 ## Factory Method Pattern
@@ -157,6 +187,13 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Links
 
+[Head First - Decorator Pattern Explained]()
+
+[A good video about Decorator Pattern]()
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/decorator)
+
+[Source Making](https://sourcemaking.com/design_patterns/decorator)
 
 ## Abstract Factory Pattern
 
