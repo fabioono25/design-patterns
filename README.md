@@ -77,7 +77,7 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 > Defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
-> Moving from a poll (chave you changed??) to a push approach (I've changed).
+> Moving from a poll (have you changed??) to a push approach (I've changed).
 > 
 > Observers register to Observable. When the Observable (Subject, Publisher) changes, the Observers (Subscribers) are Notified.
 > 
@@ -141,7 +141,7 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/ddecorator.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/decorator.png)
 
 ![](https://github.com/fabioono25/design-patterns/blob/main/assets/decorator2.png)
 
@@ -174,26 +174,49 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> 
+> Defines an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. Factory method lets a class to defer instantiation to subclasses.
 
-> 
+> Avoid class explosion (Composition over Inheritance).
+
+> Avoid breaking the SRP and OCP principles (no switch cases in a class), defering the creation to subclasses.
+ 
+> Separate the product construction code from the code that uses this product.
+ 
+> The Simple Factory is the first step for devering the responsibility of creating objects to another class. However, it is still limited, in a way that we still have a switch case (in the Factory), as a single point of failure.
+ 
+> Use it if you have no idea of the exact types of the objects your code will work with.
+ 
+> You can extend the Product construction code inpdependently from the rest of the application.
+ 
+> You can add new Products without breaking existing code.
+
 
 ### Model
 
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/factorymethod.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/factorymethod2.png)
 
 ### Real-World Examples of Use
 
-* **ss**: ss
+* **Game**: composed by levels, where you create many types of other objects (like asteroids - RandomAsteroidFactory).
+
+* **Restaurant**: where you have different types of burgers, instead of have all the logic for deciding which type of burger will be created, you defer to specialized factories, present in subclasses, the logic for creating each type of burger.
+
+* **Bank Account**: the same idea from before (PersonalAccount, BusinessAccount, CheckingAccount).
+
+
+<p>&nbsp;</p>
 
 ### Links
 
-[Head First - Decorator Pattern Explained]()
+[Head First - Factory Method Pattern Explained](https://www.youtube.com/watch?v=EcFVTgRHJLM)
 
-[A good video about Decorator Pattern]()
+[A good video about Factory Method Pattern](https://www.youtube.com/watch?v=EdFq_JIThqM)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/decorator)
+[Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)
 
-[Source Making](https://sourcemaking.com/design_patterns/decorator)
+[Source Making](https://sourcemaking.com/design_patterns/factory_method)
 
 ## Abstract Factory Pattern
 
