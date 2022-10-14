@@ -218,6 +218,8 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 [Source Making](https://sourcemaking.com/design_patterns/factory_method)
 
+<p>&nbsp;</p>
+
 ## Abstract Factory Pattern
 
 ### Definition
@@ -228,12 +230,27 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Model
 
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/abstractfactory.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/abstractfactory.png)
 
 ### Real-World Examples of Use
 
 * **ss**: ss
 
+<p>&nbsp;</p>
+
 ### Links
+
+[Head First - Abstract Factory Pattern Explained](https://www.youtube.com/watch?v=v-GiuMmsXj4)
+
+[A good video about Abstract Factory Pattern](https://www.youtube.com/watch?v=QNpwWkdFvgQ)
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/abstract-factory)
+
+[Source Making](https://sourcemaking.com/design_patterns/abstract_factory)
+
+<p>&nbsp;</p>
 
 ## Singleton Pattern
 
