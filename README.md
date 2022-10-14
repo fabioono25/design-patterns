@@ -224,8 +224,15 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> 
+> Provides an interface for creating **families of related or dependent objects** without specifying their concrete classes.
 
+> Many designs start by using the Factory Method Pattern, evolving to an Abstract Factory Design.
+> 
+> Following the OCP and SRP, by allowing each concreate factory to be self-contained and independent on the construction of the product.
+> 
+> Every time we work under the assumption of **suite of products**, we can evaluate the use of this pattern.
+> 
+> Abstract Factory, Builder and Prototype are responsible for creating products. They serve for different intents, but they can be worked together with Abstract Factory.
 > 
 
 ### Model
@@ -236,7 +243,12 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Real-World Examples of Use
 
-* **ss**: ss
+* **Platform-Independent UI**: when you generate UIs for different Operational Systems, the Abstract Factory will create a family of objects related to this specific OS.
+
+* **Themes**: if you want to apply different theme modes (dark, light), you should change lots of related controls (button, label, list) following the color patterns that are necessary.
+
+* **Laptop Factory**: if the client is considering buying a laptop from a specific brand (Dell, Apple), and it will create a variation of the same components a laptop have (processor, storage, screen, keyboard).
+
 
 <p>&nbsp;</p>
 
