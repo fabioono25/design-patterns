@@ -315,7 +315,7 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> 
+> Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queues or log requests, and support undoable operations.
 
 > 
 
