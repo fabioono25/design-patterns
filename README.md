@@ -279,7 +279,19 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 * **ss**: ss
 
+<p>&nbsp;</p>
+
 ### Links
+
+[Head First - Abstract Factory Pattern Explained](https://www.youtube.com/watch?v=hUE_j6q0LTQ)
+
+[A good video about Abstract Factory Pattern](https://www.youtube.com/watch?v=tSZn4wkBIu8)
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/singleton)
+
+[Source Making](https://sourcemaking.com/design_patterns/singleton)
+
+<p>&nbsp;</p>
 
 ## Command Pattern
 
