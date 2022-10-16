@@ -318,15 +318,35 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 > Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queues or log requests, and support undoable operations.
 
 > 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
 
 ### Model
 
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/command.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/command2.png)
 
 ### Real-World Examples of Use
 
 * **ss**: ss
 
 ### Links
+
+[Head First - Command Pattern Explained](https://www.youtube.com/watch?v=9qA5kw8dcSU)
+
+[A good video about Command Pattern](https://www.youtube.com/watch?v=UfGD60BYzPM)
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/command)
+
+[Source Making](https://sourcemaking.com/design_patterns/command)
+
+<p>&nbsp;</p>
 
 ## Adapter Pattern
 
