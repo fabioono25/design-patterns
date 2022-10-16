@@ -315,14 +315,17 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queues or log requests, and support undoable operations.
+> Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queues or log requests, and support **undoable operations**.
 
+> The Command is injected into the Invoker (remote control). When the Invoker is called, we send the Command, that it will responsible for some action upon a Receiver (Lamp).
 > 
+> Avoid the enormous number of subclasses decreases the risk of breaking the code in any subclass everytime we modify the parent class.
 > 
+> Turns a specific method call into a stand-alone object.
 > 
+> You can passs commands at method arguments, storing them inside other objects, switching commands at runtime.
 > 
-> 
-> 
+> Commands can be serialized, making it easy to write it to an read it from a file.
 > 
 > 
 
@@ -334,7 +337,10 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Real-World Examples of Use
 
-* **ss**: ss
+* **Remote Control**: where you can program specific commands for each button, making them configurable/changeable per button.
+
+* **Button in Application**: adding actions for buttons (games, for example) without needing of creating multiple classes. Adding a Command interface and implementing SaveCommand, OpenCommand.
+
 
 ### Links
 
