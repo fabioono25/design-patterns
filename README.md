@@ -356,6 +356,49 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ## Adapter Pattern
 
+### Definition
+
+> Converts the interface of a class into another interface the client expects. 
+> 
+> Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+> 
+> Wrap an existing class with a new interface.
+> 
+> Adapter can be called Wrapper.
+> 
+> Through inheritance and composition, the Adapter creates a middle-layer class that serves as a translator.
+> 
+> Adapter is about making two incompatible interfaces compatible. Facade is about taking a bunch of complex interactions and create an object that can deal with it, Proxy is about creating a layer between something you want to call (security, caching), Decorator is a way of adding behavior for some object. 
+> 
+> SRP and OCP guaranteed.
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/adapter.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/adapter2.png)
+
+### Real-World Examples of Use
+
+* **Integration**: the main use of Adapter Pattern is a client integrating/consuming interfaces, without the need of changing them. That means, when potentially in the future, the client has the opportunity to integrate with a different/newer version of the Adaptee, nothing will change (because we rely on the interface).
+
+* **Customer Integration**: maybe you have to get data from a customer in a 3rd-party system. The Adapter provides a way to expose an interface, and the Adapter will be responsible to get and treat the information (from whatever it is), converting into the correct format the client needs.
+
+
+
+### Links
+
+[Head First - Adapter Pattern Explained](https://www.youtube.com/watch?v=2PKQtcJjYvc)
+
+[A good video about Adapter Pattern](https://www.youtube.com/watch?v=wA3keqCeKtM)
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/adapter)
+
+[Source Making](https://sourcemaking.com/design_patterns/adapter)
+
+<p>&nbsp;</p>
+
+
 ## Simple Factory Pattern
 
 ## Books and Links
