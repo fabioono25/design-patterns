@@ -14,6 +14,7 @@
     <None Remove="HeadFirst\5-Singleton\" />
     <None Remove="HeadFirst\6-Command\" />
     <None Remove="HeadFirst\7-Adapter\" />
+    <None Remove="HeadFirst\8-Facade\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -25,5 +26,6 @@
     <Folder Include="HeadFirst\5-Singleton\" />
     <Folder Include="HeadFirst\6-Command\" />
     <Folder Include="HeadFirst\7-Adapter\" />
+    <Folder Include="HeadFirst\8-Facade\" />
   </ItemGroup>
 </Project>
