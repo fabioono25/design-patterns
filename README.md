@@ -399,7 +399,141 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 <p>&nbsp;</p>
 
 
-## Simple Factory Pattern
+## Facade Pattern
+
+### Definition
+
+> Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+> 
+> It provides a simplified interface while still exposing the full funcionality of the system to those who may need it.
+> 
+> The intent of **Adapter Pattern** is to alter an interface so that it matches one a client is expecting. The intent of Facade Pattern is to provide a simplified interface to a subsystem.
+> 
+> Principle of Least Knowledge (Law of Demeter): talk only to your immediate friends. Facade avoid the complexity affecting the client.
+> 
+> The drawback is that the Facade can aggregate much responsibility. It is called ***God Object***. We can create additional Facades to avoid it.
+> 
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/facade.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/facade2.png)
+
+### Real-World Examples of Use
+
+* **Video Converter**: you can implement a Facade with a method convertVideo(filename, format). It will, under the hood, integrate with lots of different processes for conversion (CodecFactory, AuxioMixer, MGEG4 Compression Coded, CompressionCodec).
+
+* **Order**: when you purchase a product, they are lots of processes envolved (Get Product details, Make Payment, Send Invoice). When we create a Facade, we encapsulate in a method called PlaceOrder().
+
+* **Generate Report**: you have multiple sources of data, coming from different databases, and you want to generate a report. You can use a HelperFacade that will integrate with them, where you pass the source of data - Oracle, MySQL and the data).
+
+
+### Links
+
+[Head First - Facade Pattern Explained](https://www.youtube.com/watch?v=K4FkHVO5iac)
+
+[A good video about Facade Pattern](https://www.youtube.com/watch?v=xWk6jvqyhAQ)
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/facade)
+
+[Source Making](https://sourcemaking.com/design_patterns/facade)
+
+<p>&nbsp;</p>
+
+
+## Template Method Pattern
+
+### Definition
+
+> Description.
+> 
+> 
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+
+### Real-World Examples of Use
+
+* **Item**: desc.
+
+
+### Links
+
+[Head First - Template Method Pattern Explained]()
+
+[A good video about Template Method Pattern]()
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/)
+
+[Source Making](https://sourcemaking.com/design_patterns/)
+
+<p>&nbsp;</p>
+
+## Iterator Method Pattern
+
+### Definition
+
+> Description.
+> 
+> 
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+
+### Real-World Examples of Use
+
+* **Item**: desc.
+
+
+### Links
+
+[Head First - Iterator Pattern Explained]()
+
+[A good video about Iterator Pattern]()
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/)
+
+[Source Making](https://sourcemaking.com/design_patterns/)
+
+<p>&nbsp;</p>
+
+## Composite Method Pattern
+
+### Definition
+
+> Description.
+> 
+> 
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+
+### Real-World Examples of Use
+
+* **Item**: desc.
+
+
+### Links
+
+[Head First - Composite Pattern Explained]()
+
+[A good video about Composite Pattern]()
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/)
+
+[Source Making](https://sourcemaking.com/design_patterns/)
+
+<p>&nbsp;</p>
 
 ## Books and Links
 
