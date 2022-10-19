@@ -446,30 +446,45 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> Description.
+> defines the sekeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 > 
+> The reuse among subclasses is improved using Template Method Pattern.
+> 
+> A hook may provide a way for a subclass to implement an optional part of an algorithm, or if it isn’t important to the subclass’s implementation, it can skip it.
+> 
+> The Hollywood Principle: Don't call us, we'll call you. A high-level component controls when and how low-level components can participate in the computation. A low-level component never calls a high-level component directly. Factory and Observer use this principle.
+> 
+> Template Method define an algorithm, letting subclasses do some of the work. It can have different implementations, keeping control over the algorithm's structure. Strategy, on the other way, rely on composition rather than inheritance to provide algorithms to be interchangeable (more flexible, using more objects, and slower).
+> 
+> Factory Method is a specialization of Template Method.
 > 
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/templatemethod.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/templatemethod2.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/hollywoodprinciple.png)
 
 ### Real-World Examples of Use
 
-* **Item**: desc.
+* **Frameworks**: the Template Method pattern is a great tool for creating frameworks, where the framework controls how something is done, letting you to specify some details during the process that can be **customized**.
+
+* **Generating Reports**: suppose you must implement a routine for expense reports. The steps are similar (connect with the data source, execute query, convert to the asked format). However, if you have a connection with MySQL vs XML file, the execution will vary between them.
+
+* **Game**: startup of the came follow the same patterns to load in general (since loading files, until cleaning temporary ones).
 
 
 ### Links
 
-[Head First - Template Method Pattern Explained]()
+[Head First - Template Method Pattern Explained](https://www.youtube.com/watch?v=7ocpwK9uesw)
 
-[A good video about Template Method Pattern]()
+[A good video about Template Method Pattern](https://www.youtube.com/watch?v=cGoVDzHvD4A)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/)
+[Refactoring Guru](https://refactoring.guru/design-patterns/template-method)
 
-[Source Making](https://sourcemaking.com/design_patterns/)
+[Source Making](https://sourcemaking.com/design_patterns/template_method)
 
 <p>&nbsp;</p>
 
