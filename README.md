@@ -492,30 +492,40 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> Description.
+> Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation (list, stack, queue, tree, ...).
+> 
+> The Iterator allows traversal of the elements of an aggregate without exposing the underlying implementation.
+> 
+> The iterator object is responsible for traversing (not the aggregate), which simplifies the aggregate interface and implementation, and places the responsibility where it should be.
+> 
+> SRP and OCP enforced: new kinds of self-contained new types of collections of iterators can be added without breaking anything.
 > 
 > 
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/iterator.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/iterator2.png)
 
 ### Real-World Examples of Use
 
-* **Item**: desc.
+* **Game**: when you can enumerate and aggregate the objects of game that are composed internally by different data structures that manage collections of items (characters, items, maps, phases).
+
+* **Inventory**: managing the different objects and collections of objects can be implemented using Iterator.
+
+* **Collections**: in a general way, managing different collections and aggregate them will be possible with Iterator. You create a layer that will abstract the physical structures each collection is defined.
 
 
 ### Links
 
-[Head First - Iterator Pattern Explained]()
+[Head First - Iterator Pattern Explained](https://www.youtube.com/watch?v=uNTNEfwYXhI)
 
-[A good video about Iterator Pattern]()
+[A good video about Iterator Pattern](https://www.youtube.com/watch?v=QCWJWfuAfJc)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/)
+[Refactoring Guru](https://refactoring.guru/design-patterns/iterator)
 
-[Source Making](https://sourcemaking.com/design_patterns/)
+[Source Making](https://sourcemaking.com/design_patterns/iterator)
 
 <p>&nbsp;</p>
 
