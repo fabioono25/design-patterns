@@ -36,6 +36,7 @@
     <None Remove="HeadFirst\7-Adapter\" />
     <None Remove="HeadFirst\8-Facade\" />
     <None Remove="HeadFirst\9-TemplateMethod\" />
+    <None Remove="HeadFirst\10-Iterator\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -50,6 +51,7 @@
     <Folder Include="HeadFirst\8-Facade\" />
     <Folder Include="HeadFirst\9-TemplateMethod\" />
     <Folder Include="HeadFirst\8-Facade\" />
+    <Folder Include="HeadFirst\10-Iterator\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="3-Behavioral\Strategy\StrategyTests.cs" />
