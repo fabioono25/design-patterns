@@ -529,7 +529,7 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 <p>&nbsp;</p>
 
-## Composite Method Pattern
+## Composite Pattern
 
 ### Definition
 
@@ -560,12 +560,68 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 <p>&nbsp;</p>
 
-## Books and Links
 
-* [Head First Design Patterns - O'Reilly Media](https://learning.oreilly.com/library/view/head-first-design/0596007124/)
-* [Refactoring.Guru](https://refactoring.guru/)
-* [DoFactory](https://www.dofactory.com/net/design-patterns)
-* [Source Making](https://sourcemaking.com/)
-* [Clean Code - Design Patterns - Uncle Bob](https://cleancoders.com/episode/clean-code-episode-25)
+## State Pattern
+
+### Definition
+
+> Description.
+> 
+> 
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+
+### Real-World Examples of Use
+
+* **Item**: desc.
+
+
+### Links
+
+[Head First - State Pattern Explained]()
+
+[A good video about State Pattern]()
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/)
+
+[Source Making](https://sourcemaking.com/design_patterns/)
+
+<p>&nbsp;</p>
+
+
+## Proxy Pattern
+
+### Definition
+
+> Description.
+> 
+> 
+
+### Model
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+
+### Real-World Examples of Use
+
+* **Item**: desc.
+
+
+### Links
+
+[Head First - Proxy Pattern Explained]()
+
+[A good video about Proxy Pattern]()
+
+[Refactoring Guru](https://refactoring.guru/design-patterns/)
+
+[Source Making](https://sourcemaking.com/design_patterns/)
+
+<p>&nbsp;</p>
 
 
