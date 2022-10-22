@@ -533,15 +533,19 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> Description.
+> Allows you to compose objects into tree structures to represent part-whole hierarchies.
+> 
+> Composite lets clients treat individual objects and compositions of objects uniformly.
+> 
+> The idea is to build structures of objects in the form of trees that contain both compositions of objects and individual 
 > 
 > 
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/composite.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/composite2.png)
 
 ### Real-World Examples of Use
 
