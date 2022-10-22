@@ -539,6 +539,9 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 > 
 > The idea is to build structures of objects in the form of trees that contain both compositions of objects and individual 
 > 
+> Composite pattern makes sense only when objects structures can be represented as a tree.
+> 
+> OCP applied, where you can introduce a new element types into the application without breaking the existing code.
 > 
 
 ### Model
@@ -549,18 +552,22 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Real-World Examples of Use
 
-* **Item**: desc.
+* **Family Tree**: describe a family tree structure, where each node is composed by none or multiple composite nodes. The potential is to traversing the tree asking for an information (name, for example).
+
+* **ToDo Application**: when you have a TODO list each of them can be composed by sublists of TODOs.
+
+* **File Directory**: where you can implement the File as the Composite interface, letting TextFile and Directory implement this interface. You can realize that Directory has multiple files inside it (and without Composition this operation would break the OCP principle).
 
 
 ### Links
 
-[Head First - Composite Pattern Explained]()
+[Head First - Composite Pattern Explained](https://www.youtube.com/watch?v=EWDmWbJ4wRA)
 
-[A good video about Composite Pattern]()
+[A good video about Composite Pattern](https://www.youtube.com/watch?v=oo9AsGqnisk)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/)
+[Refactoring Guru](https://refactoring.guru/design-patterns/composite)
 
-[Source Making](https://sourcemaking.com/design_patterns/)
+[Source Making](https://sourcemaking.com/design_patterns/composite)
 
 <p>&nbsp;</p>
 
