@@ -18,6 +18,7 @@
     <None Remove="HeadFirst\9-TemplateMethod\" />
     <None Remove="HeadFirst\10-Iterator\" />
     <None Remove="HeadFirst\11-Composite\" />
+    <None Remove="HeadFirst\12-State\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -33,5 +34,6 @@
     <Folder Include="HeadFirst\9-TemplateMethod\" />
     <Folder Include="HeadFirst\10-Iterator\" />
     <Folder Include="HeadFirst\11-Composite\" />
+    <Folder Include="HeadFirst\12-State\" />
   </ItemGroup>
 </Project>
