@@ -620,31 +620,44 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Definition
 
-> Description.
+> Provides a surrogate or placeholder for another object to control access to it.
 > 
+> A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+>
+> Remote Proxy: access resources that are remote.
 > 
+> Virtual Proxy: controls access to a resource that it is expensive to create (cache).
+> 
+> Protection Proxy: it controls access to resources based on access rights.
+> 
+> Interact with another entity, without changing its interface.
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/proxy.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/proxy2.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **Lazy initialization**: when you have a heavyweight service object that wastes system resources by being always up, even though you only need it from time to time. You can implement Virtual Proxy to tackle this scenario.
 
+* **Access control**: when you want only specific clients to be able to use the service object; for instance, when your objects are crucial parts of an operating system and clients are various launched applications (including malicious ones). Use Protection Proxy for this scenario.
+
+* **Remote Service Call**: the proxy is located on a remote server and passes the client request over the network, handling all of the nasty details of working with the network.
+
+* **History of Requests**: the proxy can log each request before passing it to the service.
 
 
 ### Links
 
-[Head First - State Pattern Explained]()
+[Head First - State Pattern Explained](https://www.youtube.com/watch?v=NwaabHqPHeM)
 
-[A good video about State Pattern]()
+[A good video about State Pattern](https://www.youtube.com/watch?v=TS5i-uPXLs8)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/)
+[Refactoring Guru](https://refactoring.guru/design-patterns/proxy)
 
-[Source Making](https://sourcemaking.com/design_patterns/)
+[Source Making](https://sourcemaking.com/design_patterns/proxy)
 
 <p>&nbsp;</p>
 
