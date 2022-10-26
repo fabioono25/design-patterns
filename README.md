@@ -13,6 +13,25 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 > Favor composition over inheritance
 
 
+## Pattern Categories
+
+The patterns are grouped into categories, based on their purposes:
+
+- **Creational Patterns:** involve object instantiation and provide a way to decouple a cliente from the objects it needs to instantiate.
+
+- **Behavioral Patterns:** how classes and objects interact and distribute responsibility.
+
+- **Structural Patterns:** let you composte classes or objects into larger structures. 
+
+
+Another classification is wheter the pattern deals with classes or objects:
+
+- **Class Patterns:** describes how relationships between classes are defined via inheritance. Stablished at compile time.
+
+- **Object Patterns:** relationship between objects primarily defined by composition. Created typically at runtime (more flexible and dynamic). 
+
+
+
 ## Strategy Pattern
 
 ### Definition
@@ -662,39 +681,50 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Bridge Pattern
 
 ### Definition
 
-> Description.
+> Allows you to vary the implementation and the abstraction by placing the two in separate class hierarchies.
 > 
+> Lets you to split a large class or a set of closely related classes into two separate hierarchies (abstraction and implementation) which can be developed independently of each other.
 > 
+> Decouples an abstraction from its implementation so that the two can vary independently.
+> 
+> Abstraction and implementation can be extended independently.
+> 
+> Changes to the concrete abstraction classes don’t affect the client.
+> 
+> Adapter makes things work after they are designed. Bridge makes them work before they are.
+
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/bridge.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/bridge2.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **Graphics and Windowing systems**: that need to run over multiple platforms.
+
+* **Send Message**: you have a scenario where you want to send a message (abstraction, or hight-level control layer) but you have two ways to do that, by Email or SMS (implementation, or low-level control layer). You can use abstract pattern to solve this problem.
 
 
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[Head First - Bridge Pattern Explained](https://www.youtube.com/watch?v=F1YQ7YRjttI)
 
-[A good video about xxx Pattern]()
+[A good video about Bridge Pattern](https://www.youtube.com/watch?v=88kAIisOiYs)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
+[Refactoring Guru](https://refactoring.guru/design-patterns/bridge)
 
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/bridge)
 
 <p>&nbsp;</p>
 
-## xxx Pattern
+## Builder Pattern
 
 ### Definition
 
@@ -704,9 +734,9 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/builder.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/builder2.png)
 
 ### Real-World Examples of Use
 
@@ -716,13 +746,13 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[Head First - Builder Pattern Explained]()
 
-[A good video about xxx Pattern]()
+[A good video about Builder Pattern]()
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
+[Refactoring Guru](https://refactoring.guru/design-patterns/builder)
 
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/builder)
 
 <p>&nbsp;</p>
 
