@@ -728,9 +728,17 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Definition
 
-> Description.
+> Encapsulate the construction of a product (a complext object) and allow it to be constructed in steps.
 > 
+> The construction is multistep and varying process (different from one-step factories).
 > 
+> Hides the internal representation of the product from the client.
+> 
+> Product implementation can be swapped in and out because the client only sees an abstract interface.
+> 
+> Minimize the problem of using multiple parameters to construct a complex object, letting the construction to be executed in steps.
+> 
+> Method Chaining is used to invoke multiple methods on the same object which occurs as a single statement. Method-chaining is implemented by a series of methods that return the this reference for a class instance.
 
 ### Model
 
@@ -740,15 +748,16 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **Car and Manual**: the construction of a Car must be followed by its manual. You can have a Builder interface the abstracts each of the components, both of them being created as part of the car or the manual.
 
+* **Different Representations**: use this pattern to create different representations of some product, as the example before. Another example: stone vs wooden houses.
 
+* **Personal Information**: consider a place where you should add personal information, in a way that some of them are mandatory (like name) others not. Instead of implementing n method overloadings or with default parameters, you can consider using Builder pattern to provice concise, simple methods (addAge, addGender, addCity).
+ 
 
 ### Links
 
-[Head First - Builder Pattern Explained]()
-
-[A good video about Builder Pattern]()
+[A good video about Builder Pattern](https://www.youtube.com/watch?v=MaY_MDdWkQw)
 
 [Refactoring Guru](https://refactoring.guru/design-patterns/builder)
 
@@ -757,7 +766,7 @@ Another classification is wheter the pattern deals with classes or objects:
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Chain of Responsibility Pattern
 
 ### Definition
 
@@ -779,9 +788,9 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[Head First - Chain of Responsibility Pattern Explained]()
 
-[A good video about xxx Pattern]()
+[A good video about Chain of Responsibility Pattern]()
 
 [Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
 
@@ -1021,3 +1030,9 @@ Another classification is wheter the pattern deals with classes or objects:
 <p>&nbsp;</p>
 
 
+
+# Notes (TODO):
+
+- Separate the Pattern in categories (Structural, Behavioral and Creational).
+- Implement the examples from Geekific
+- Add the step by step for implementing each pattern in the documentation.
