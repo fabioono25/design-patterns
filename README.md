@@ -810,9 +810,18 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Definition
 
-> Description.
+> When one instance of a class can be used to provide many virtual instances.
 > 
+> Lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
 > 
+> Reduces the number of objects instances at runtime, saving memory.
+> 
+> Centralizes state for many "virtual" objects into a single location.
+> 
+> A drawback of the Flyweight Pattern is that once you’ve implemented it, single, logical instances of the class will not be able to behave independently from the other instances.
+> 
+> Since the same flyweight object can be used in different contexts, you have to make sure that its state can’t be modified. A flyweight should initialize its state just once, via constructor parameters. It shouldn’t expose any setters or public fields to other objects.
+
 
 ### Model
 
@@ -822,15 +831,14 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **Game**: where you have parts of the game (ex: Particle) where you can divide individual parts (like coordinates) and sharing others into a specific object (color).
 
+* **Browser Rendering**: when a browser render images for example, it is possible loading the image once, and all other times the browser can reuse the image (caching).
 
 
 ### Links
 
-[Head First - Flyweight Pattern Explained]()
-
-[A good video about Flyweight Pattern]()
+[A good video about Flyweight Pattern](https://www.youtube.com/watch?v=qscOsQV-K14)
 
 [Refactoring Guru](https://refactoring.guru/design-patterns/flyweight)
 
