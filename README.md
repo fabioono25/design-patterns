@@ -770,36 +770,43 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Definition
 
-> Description.
+> When you want to give more than one object a chance to handle a request.
 > 
+> With the Chain of Responsibility Pattern, you create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes it on to the next object in the chain.
+> 
+> Decouples the sender of the request and its receivers.
+> 
+> Simplifies your object: no need to know the chain's structure and keep direct references to its members.
+> 
+> Adding responsibilities dynamically (by changing the members or order of the chain).
 > 
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/chain_of_responsibility.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/chain_of_responsibility2.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **Windows Systems**: handle events like mouse clicks and keyboard events.
 
+* **Authentication System**: where they are lots of steps that must be performed regarding validation of an user in a system (Authentication, Authorization, Validation, Caching), during an order processing, for example.
 
+* **Operators**: operators receiveing your call and handling the request to another operator, until you reach the last one.
 
 ### Links
 
-[Head First - Chain of Responsibility Pattern Explained]()
+[A good video about Chain of Responsibility Pattern](https://www.youtube.com/watch?v=FafNcoBvVQo)
 
-[A good video about Chain of Responsibility Pattern]()
+[Refactoring Guru](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
-
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/chain_of_responsibility)
 
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Flyweight Pattern
 
 ### Definition
 
@@ -809,9 +816,9 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/flyweight)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/flyweight2.png)
 
 ### Real-World Examples of Use
 
@@ -821,13 +828,13 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[Head First - Flyweight Pattern Explained]()
 
-[A good video about xxx Pattern]()
+[A good video about Flyweight Pattern]()
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
+[Refactoring Guru](https://refactoring.guru/design-patterns/flyweight)
 
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/flyweight)
 
 <p>&nbsp;</p>
 
