@@ -889,35 +889,41 @@ Another classification is wheter the pattern deals with classes or objects:
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Mediator Pattern
 
 ### Definition
 
-> Description.
+> Use Mediator to centralize complex communications and control between related objects.
 > 
+> Lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+> 
+> Simplifies maintenance of the system by centralizing control logic.
+> 
+> Simplifies and reduces the variety of messages sent between objects in the system.
+> 
+> Without proper design, the Mediator object itself can become overly complex.
 > 
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
-
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/mediator.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **GUI components**: Mediator is commonly used to coordinate GUI components.
 
+* **Social Media Groups**: RegisterUser and SendMessage can be implemented using Mediator.
+
+* **Air Traffic Control**: mediator ATC will act as the central point where all flights communication.
 
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[A good video about Mediator Pattern](https://www.youtube.com/watch?v=35D5cBosD4c)
 
-[A good video about xxx Pattern]()
+[Refactoring Guru](https://refactoring.guru/design-patterns/mediator)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
-
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/mediator)
 
 <p>&nbsp;</p>
 
