@@ -928,35 +928,45 @@ Another classification is wheter the pattern deals with classes or objects:
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Memento Pattern
 
 ### Definition
 
-> Description.
+> Delegates creating the state snapshots to the actual owner of that state. Hence, the original class can make the snapshots since it has full access to its own state.
+> 
+> lets you save and restore the previous state of an object without revealing the details of its implementation.
+> 
+> Keeping the saved state external from the key object helps to maintain cohesion.
+> 
+> Keeps the object's data encapsulated.
+> 
+> Provides easy-to-implement recovery capability.
+> 
+> Full copies of an object's state.
+> 
 > 
 > 
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/memento.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/memento2.png)
+
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/memento3.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
-
+* **Text Editor**: any text change is stored as a state. It allows the undo of some operation, without the need to expose the base object's properties. The Memento pattern lets you make full copies of an object’s state, including private fields, and store them separately from the object. 
 
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[A good video about memento Pattern](https://www.youtube.com/watch?v=_Q5rXfGuyLQ&t=43s)
 
-[A good video about xxx Pattern]()
+[Refactoring Guru](https://refactoring.guru/design-patterns/memento)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
-
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/memento)
 
 <p>&nbsp;</p>
 
