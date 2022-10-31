@@ -1007,71 +1007,43 @@ Another classification is wheter the pattern deals with classes or objects:
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Visitor Pattern
 
 ### Definition
 
-> Description.
+> When you want to add capabilities to a composite of objects and encapsulation is not important.
 > 
+> Lets you separate algorithms from the objects on which they operate.
 > 
+> Allows you to add operations to a Composite structure without changing the structure itself.
+> 
+> The code for operations performed by the Visitor is centralized.
+> 
+> The Composite classes’ encapsulation is broken when the Visitor is used.
+> 
+> Because the traversal function is involved, changes to the Composite structure are more difficult.
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/visitor.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
+* **Supermarket**: where the shopping cart is your set of elements. When you get to the checkout, the cashier acts as a visitor, taking the disparate set of elements (your shopping), some with prices and others that need to be weighed, in order to provide you with a total.
 
+* **Taxi**: where the customer calls orders a taxi, which arrives at his door. Once the person sits in, the visiting taxi is in control of the transport for that person. 
 
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[A good video about Visitor Pattern](https://www.youtube.com/watch?v=UQP5XqMqtqQ)
 
-[A good video about xxx Pattern]()
+[Refactoring Guru](https://refactoring.guru/design-patterns/visitor)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
-
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/visitor)
 
 <p>&nbsp;</p>
-
-
-## xxx Pattern
-
-### Definition
-
-> Description.
-> 
-> 
-
-### Model
-
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
-
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
-
-### Real-World Examples of Use
-
-* **ss**: sssss.
-
-
-
-### Links
-
-[Head First - xxx Pattern Explained]()
-
-[A good video about xxx Pattern]()
-
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
-
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
-
-<p>&nbsp;</p>
-
 
 
 # Notes (TODO):
