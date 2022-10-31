@@ -944,8 +944,6 @@ Another classification is wheter the pattern deals with classes or objects:
 > 
 > Full copies of an object's state.
 > 
-> 
-> 
 
 ### Model
 
@@ -971,35 +969,40 @@ Another classification is wheter the pattern deals with classes or objects:
 <p>&nbsp;</p>
 
 
-## xxx Pattern
+## Prototype Pattern
 
 ### Definition
 
-> Description.
+> Lets you copy existing objects without making your code dependent on their classes.
 > 
+> Use Prototype Pattern when creating an instance of a given class is either expensive or complicated.
 > 
+> Hides the complexity of making new instances from the client.
+> 
+> Provides the option for the client to generate objects whose type is not known.
+> 
+> Is some circumstances, copying an object can be more efficient than creating an object.
+> 
+> Copying an object can be sometimes complicated.
 
 ### Model
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/prototype.png)
 
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/xx2.png)
+![](https://github.com/fabioono25/design-patterns/blob/main/assets/prototype2.png)
 
 ### Real-World Examples of Use
 
-* **ss**: sssss.
-
+* **GUI Application Framework**: using Prototype will provide a way to create application-specific objects. Who uses the framework will pass a prototypical instance of the button class. The button can return a clone when clicked, with all necessary customizations on the clone.
 
 
 ### Links
 
-[Head First - xxx Pattern Explained]()
+[A good video about Prototype Pattern](https://www.youtube.com/watch?v=DcFhITC9v0E)
 
-[A good video about xxx Pattern]()
+[Refactoring Guru](https://refactoring.guru/design-patterns/prototype)
 
-[Refactoring Guru](https://refactoring.guru/design-patterns/xxx)
-
-[Source Making](https://sourcemaking.com/design_patterns/xxx)
+[Source Making](https://sourcemaking.com/design_patterns/prototype)
 
 <p>&nbsp;</p>
 
