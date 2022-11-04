@@ -1,5 +1,6 @@
 using design_patterns.HeadFirst.DucksProblem;
 using Xunit;
+using PaymentServiceOld = design_patterns.GangOfFour.Structural.Strategy.Payment.Problem.PaymentService;
 
 namespace design_patternsTests.HeadFirst.DucksProblem
 {
@@ -21,6 +22,14 @@ namespace design_patternsTests.HeadFirst.DucksProblem
             modelDuck.performFly();
             modelDuck.setFlyStrategy(new FlyRocket());
             modelDuck.performFly();
-        }        
+        }
+
+        [Fact]
+        public void PaymentServiceProblemTest()
+        {
+            var paymentService = new PaymentServiceOld(23, true);
+            paymentService.ProcessOrder("CreditCard");
+            paymentService.ProcessOrder("PayPal");
+        }
     }
 }
