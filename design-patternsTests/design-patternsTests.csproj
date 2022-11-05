@@ -39,6 +39,9 @@
     <None Remove="HeadFirst\10-Iterator\" />
     <None Remove="HeadFirst\11-Composite\" />
     <None Remove="HeadFirst\12-State\" />
+    <None Remove="GangOfFour\Behavioral\" />
+    <None Remove="GangOfFour\Behavioral\State\" />
+    <None Remove="GangOfFour\Behavioral\Strategy\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -56,6 +59,9 @@
     <Folder Include="HeadFirst\10-Iterator\" />
     <Folder Include="HeadFirst\11-Composite\" />
     <Folder Include="HeadFirst\12-State\" />
+    <Folder Include="GangOfFour\Behavioral\" />
+    <Folder Include="GangOfFour\Behavioral\State\" />
+    <Folder Include="GangOfFour\Behavioral\Strategy\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="3-Behavioral\Strategy\StrategyTests.cs" />

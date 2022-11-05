@@ -33,7 +33,7 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ## Behavioral Design Patterns
 
-- [Strategy](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/1-Strategy/strategy.md): Lets you define a **family of algorithms**, put each of them into **separate class**, and make **their objects interchangeable**.
+- [Strategy](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Strategy/strategy.md): Lets you define a **family of algorithms**, put each of them into **separate class**, and make **their objects interchangeable**.
 
 - [.]()
 

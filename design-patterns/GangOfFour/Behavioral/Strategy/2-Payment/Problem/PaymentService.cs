@@ -42,6 +42,8 @@ namespace design_patterns.GangOfFour.Structural.Strategy.Payment.Problem
                     Console.WriteLine($"Paying {GetTotal()} via PayPal.");
                     break;
 
+                // each new payment way will add more cases here
+
                 default:
                     Console.WriteLine($"Nothing payment type defined.");
                     break;
