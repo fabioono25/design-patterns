@@ -21,6 +21,26 @@
     <None Remove="HeadFirst\12-State\" />
     <None Remove="GangOfFour\Behavioral\Strategy\2-Payment\Solution\" />
     <None Remove="GangOfFour\Behavioral\State\" />
+    <None Remove="GangOfFour\Creational\" />
+    <None Remove="GangOfFour\Creational\FactoryMethod\" />
+    <None Remove="Others\" />
+    <None Remove="Others\SimpleFactory\" />
+    <None Remove="GangOfFour\Creational\Singleton\" />
+    <None Remove="GangOfFour\Creational\Builder\" />
+    <None Remove="GangOfFour\Creational\Prototype\" />
+    <None Remove="GangOfFour\Structural\" />
+    <None Remove="GangOfFour\Structural\Adapter\" />
+    <None Remove="GangOfFour\Structural\Bridge\" />
+    <None Remove="GangOfFour\Structural\Decorator\" />
+    <None Remove="GangOfFour\Structural\Facade\" />
+    <None Remove="GangOfFour\Structural\Flyweight\" />
+    <None Remove="GangOfFour\Structural\Proxy\" />
+    <None Remove="GangOfFour\Behavioral\ChainOfResponsibility\" />
+    <None Remove="GangOfFour\Behavioral\2-Observer\" />
+    <None Remove="GangOfFour\Behavioral\9-TemplateMethod\" />
+    <None Remove="GangOfFour\Behavioral\Mediator\" />
+    <None Remove="GangOfFour\Behavioral\Memento\" />
+    <None Remove="GangOfFour\Behavioral\Visitor\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeadFirst\2-Observer\" />
@@ -39,5 +59,25 @@
     <Folder Include="HeadFirst\12-State\" />
     <Folder Include="GangOfFour\Behavioral\Strategy\2-Payment\Solution\" />
     <Folder Include="GangOfFour\Behavioral\State\" />
+    <Folder Include="GangOfFour\Creational\" />
+    <Folder Include="GangOfFour\Creational\FactoryMethod\" />
+    <Folder Include="Others\" />
+    <Folder Include="Others\SimpleFactory\" />
+    <Folder Include="GangOfFour\Creational\Singleton\" />
+    <Folder Include="GangOfFour\Creational\Builder\" />
+    <Folder Include="GangOfFour\Creational\Prototype\" />
+    <Folder Include="GangOfFour\Structural\" />
+    <Folder Include="GangOfFour\Structural\Adapter\" />
+    <Folder Include="GangOfFour\Structural\Bridge\" />
+    <Folder Include="GangOfFour\Structural\Decorator\" />
+    <Folder Include="GangOfFour\Structural\Facade\" />
+    <Folder Include="GangOfFour\Structural\Flyweight\" />
+    <Folder Include="GangOfFour\Structural\Proxy\" />
+    <Folder Include="GangOfFour\Behavioral\ChainOfResponsibility\" />
+    <Folder Include="GangOfFour\Behavioral\Observer\" />
+    <Folder Include="GangOfFour\Behavioral\TemplateMethod\" />
+    <Folder Include="GangOfFour\Behavioral\Mediator\" />
+    <Folder Include="GangOfFour\Behavioral\Memento\" />
+    <Folder Include="GangOfFour\Behavioral\Visitor\" />
   </ItemGroup>
 </Project>
