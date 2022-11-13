@@ -33,15 +33,28 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ## Behavioral Design Patterns
 
-- [Strategy](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Strategy/strategy.md): Lets you define a **family of algorithms**, put each of them into **separate class**, and make **their objects interchangeable**.
+- [Chain of Responsibility](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/ChainOfResponsibility/chainofresponsibility.md): Le
+
+- [Command](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Command/command.md): Le
+
+- [Iterator](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Iterator/iterator.md): Le
+
+- [Mediator](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Mediator/mediator.md): Le
+
+- [Memento](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Memento/memento.md): Le
+
+- [Observer](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Observer/observer.md): Le
 
 - [State](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/State/state.md): Lets an object alter its behavior when its **internal state** changes. This pattern is close to the concept of **finite-state machine**.
 
-- [.]()
+- [Strategy](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Strategy/strategy.md): Lets you define a **family of algorithms**, put each of them into **separate class**, and make **their objects interchangeable**.
 
-- [.]()
+- [Template Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/TemplateMethod/templatemethod.md): L
 
-- [.]()
+- [Visitor](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Visitor/visitor.md): L
+
+&nbsp;
+&nbsp;
 
 ## Creational Design Patterns
 
