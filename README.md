@@ -58,15 +58,18 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ## Creational Design Patterns
 
-- [.](): .
+- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/FactoryMethod/factorymethod.md): .
 
-- [.]()
+- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): .
 
-- [.]()
+- [Builder](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Builder/builder.md): .
 
-- [.]()
+- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Prototype/prototype.md): .
 
-- [.]()
+- [Singleton](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Singleton/singleton.md): .
+
+&nbsp;
+&nbsp;
 
 ## Structural Design Patterns
 
