@@ -73,15 +73,19 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ## Structural Design Patterns
 
-- [.](): .
+- [Adapter](): .
 
-- [.]()
+- [Bridge]()
 
-- [.]()
+- [Composite]()
 
-- [.]()
+- [Decorator]()
 
-- [.]()
+- [Facade]()
+
+- [Flyweight]()
+
+- [Proxy]()
 
 
 ## Observer Pattern
