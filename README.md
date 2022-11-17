@@ -87,6 +87,8 @@ Another classification is wheter the pattern deals with classes or objects:
 
 - [Proxy]()
 
+&nbsp;
+&nbsp;
 
 ## Observer Pattern
 
