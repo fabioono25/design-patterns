@@ -33,7 +33,7 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ## Creational Design Patterns
 
-- [Singleton](https://github.com/fabioono25/design-patterns/documents/singleton.md): .
+- [Singleton](https://github.com/fabioono25/design-patterns/blob/main/documents/singleton.md): .
 
 - [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/FactoryMethod/factorymethod.md): .
 
