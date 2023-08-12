@@ -6,9 +6,13 @@ The Singleton Pattern is a creational design pattern that ensures a class has on
 
 It is a relatively straightforward pattern to implement. It involves ensuring that a class has only one instance and providing a global point of access to that instance. This pattern is commonly used for managing resources that should have a single instance throughout the application.
 
+&nbsp;
+
 ### Why this pattern
 
 The Singleton Pattern was created to address the need for a single point of access to a specific instance of a class. It is particularly useful when a single instance of a class needs to coordinate actions across the system, such as managing a configuration or controlling access to a shared resource.
+
+&nbsp;
 
 ### About
 
@@ -23,7 +27,8 @@ The Singleton Pattern was created to address the need for a single point of acce
 > Breaks the SRP.
 > 
 > It requires special treatment in a multithreading environment so that multiple threads won't create a singleton object several times.
-> 
+
+&nbsp;
 
 ### Model
 
@@ -31,16 +36,22 @@ The Singleton Pattern was created to address the need for a single point of acce
 
 ![](https://github.com/fabioono25/design-patterns/blob/main/assets/singleton2.png)
 
+&nbsp;
+
 ### Advantages
 - **Single Instance**: Guarantees that a class has only one instance throughout the application's lifecycle.
 - **Global Access**: Provides a global point of access to the instance, allowing easy sharing of resources.
 - **Lazy Initialization**: The instance is created only when it is first accessed, improving resource utilization.
 - **Thread Safety**: Can be implemented to ensure thread-safe instance creation in multi-threaded environments.
 
+&nbsp;
+
 ### Disadvantages
 - **Global State**: The Singleton pattern introduces a global state, which can make the code harder to maintain and test.
 - **Testing Challenges**: The global state can lead to difficulties in unit testing and mocking the Singleton instance.
 - **Hidden Dependencies**: Classes using the Singleton may become tightly coupled to it, making code less modular.
+
+&nbsp;
 
 ### Real-World Examples of Use
 
@@ -49,14 +60,20 @@ The Singleton Pattern was created to address the need for a single point of acce
 - **Configuration Manager**: Singleton can manage application configuration settings in a centralized manner.
 - **Print Spooler**: In a print spooling system, a Singleton could manage print requests to a single printer instance.
 
+&nbsp;
+
 ### Relationship with Other Patterns
 - **Factory Method**: Singleton can be considered a specialization of the Factory Method pattern, where a factory creates only a single instance.
 - **Facade**: A Singleton can act as a Facade to provide a simplified interface to a complex subsystem.
 - **State**: The Singleton pattern is often used with the State pattern to manage the application's global state.
 
-### Hot to Replace This Pattern
+&nbsp;
+
+### How to Replace This Pattern
 - **Dependency Injection**: In some cases, Dependency Injection can be used to provide a single instance of a class when needed.
 - **Static Methods/Fields**: Depending on the scenario, using static methods or fields can achieve similar results.
+
+&nbsp;
 
 ### Examples of Implementation:
 #### Simple Implementation [Not thread-safe]:
@@ -83,6 +100,8 @@ public sealed class SimpleSingleton
     }
 }
 ```
+
+&nbsp;
 
 #### Thread-safe Implementation:
 
@@ -112,6 +131,8 @@ public sealed class ThreadSafeSingleton
     }
 }
 ```
+
+&nbsp;
 
 #### Double-Checked Locking (pre C# 6.0):
 
@@ -145,7 +166,9 @@ public sealed class DoubleCheckedLockingSingleton
 }
 ```
 
-### Double-Checled Locking (after C# 6.0):
+&nbsp;
+
+#### Double-Checled Locking (after C# 6.0):
 
 In C# 6 and later versions, the introduction of the volatile keyword and improvements in the memory model help to mitigate some of these issues. The volatile keyword indicates that a field should not be cached by processors, ensuring that reads and writes to the field always go to the main memory, rather than relying on cached values. This helps in ensuring proper synchronization and visibility of the singleton instance across multiple threads.
 
@@ -182,6 +205,8 @@ By marking the instance variable as volatile, you ensure that reads and writes t
 
 It's important to note that while the use of volatile helps address some of the issues with the DCL pattern, it may not completely eliminate all potential problems in all scenarios. Additionally, starting with C# 7.0, the Lazy<T> class is recommended for achieving safe and efficient lazy initialization in singleton patterns, as shown in the previous example labeled "Lazy Initialization." This approach is simpler and less error-prone than managing the synchronization manually.
 
+&nbsp;
+
 #### Lazy Initialization:
 
 This approach provides lazy initialization using the 'Lazy<T>' class, ensuring thread safety and efficient resource utilization:
@@ -197,6 +222,8 @@ public sealed class LazySingleton
 }
 
 ```
+
+&nbsp;
 
 #### Monostate Pattern (Shared State):
 
@@ -214,6 +241,8 @@ public class MonostateSingleton
     }
 }
 ```
+
+&nbsp;
 
 #### Singleton Anti-Pattern:
 
