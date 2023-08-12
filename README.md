@@ -33,7 +33,7 @@ Another classification is wheter the pattern deals with classes or objects:
 
 ## Creational Design Patterns
 
-- [Singleton](https://github.com/fabioono25/design-patterns/blob/main/documents/singleton.md): .
+- [Singleton](https://github.com/fabioono25/design-patterns/blob/main/documents/singleton.md): The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is useful when you want to restric the instantiation of a class to a single object, such as a configuration manager or logging service.
 
 - [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/FactoryMethod/factorymethod.md): .
 
@@ -280,53 +280,6 @@ Another classification is wheter the pattern deals with classes or objects:
 [Refactoring Guru](https://refactoring.guru/design-patterns/abstract-factory)
 
 [Source Making](https://sourcemaking.com/design_patterns/abstract_factory)
-
-<p>&nbsp;</p>
-
-## Singleton Pattern
-
-### Definition
-
-> Lets you ensure that a class has **only one instance** and provides a **global access point of access** to it (single point of access).
-
-> It is considered an anti-pattern. Avoid globals is one of the motives.
-> 
-> Difficult to test because many test frameworks rely on inheritance when producing mock objects.
-> 
-> A private static singleton field will enforce the singleton instance. A private constructor + static method (getInstance) will be used to verify the present instance (and generating one). 
-> 
-> Breaks the SRP.
-> 
-> It requires special treatment in a multithreading environment so that multiple threads won't create a singleton object several times.
-> 
-> 
-
-### Model
-
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/singleton.png)
-
-![](https://github.com/fabioono25/design-patterns/blob/main/assets/singleton2.png)
-
-
-### Real-World Examples of Use
-
-* **Don't Use it**: although it is possible to implement the Singleton pattern in a thread-safe approach, the testability will be lost + the SRP is breaked by the use of this pattern.
-
-* **Loggging**: an use of this pattern could be related to logging features, in a way that the log is accessed globally by the application and it can have just one instance active.
-
-* **Database connection**: the same explanation of the previous item (logging). For both examples of use, don't forget to consider that in a multithreading environment you should control the threads to avoid multiple instances.
-
-<p>&nbsp;</p>
-
-### Links
-
-[Head First - Abstract Factory Pattern Explained](https://www.youtube.com/watch?v=hUE_j6q0LTQ)
-
-[A good video about Abstract Factory Pattern](https://www.youtube.com/watch?v=tSZn4wkBIu8)
-
-[Refactoring Guru](https://refactoring.guru/design-patterns/singleton)
-
-[Source Making](https://sourcemaking.com/design_patterns/singleton)
 
 <p>&nbsp;</p>
 
