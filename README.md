@@ -13,7 +13,7 @@ The idea is to organize all design patterns (GoF and no GoF) in a series of defi
 > Favor composition over inheritance.
 
 
-## Pattern Categories
+## GoF Pattern Categories
 
 The patterns are grouped into categories, based on their purposes:
 
@@ -30,6 +30,21 @@ Another classification is wheter the pattern deals with classes or objects:
 
 - **Object Patterns:** relationship between objects primarily defined by composition. Created typically at runtime (more flexible and dynamic). 
 
+
+## Creational Design Patterns
+
+- [Singleton](https://github.com/fabioono25/design-patterns/documents/singleton.md): .
+
+- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/FactoryMethod/factorymethod.md): .
+
+- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): .
+
+- [Builder](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Builder/builder.md): .
+
+- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Prototype/prototype.md): .
+
+&nbsp;
+&nbsp;
 
 ## Behavioral Design Patterns
 
@@ -52,21 +67,6 @@ Another classification is wheter the pattern deals with classes or objects:
 - [Template Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/TemplateMethod/templatemethod.md): L
 
 - [Visitor](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Visitor/visitor.md): L
-
-&nbsp;
-&nbsp;
-
-## Creational Design Patterns
-
-- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/FactoryMethod/factorymethod.md): .
-
-- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): .
-
-- [Builder](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Builder/builder.md): .
-
-- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Prototype/prototype.md): .
-
-- [Singleton](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Singleton/singleton.md): .
 
 &nbsp;
 &nbsp;
