@@ -35,7 +35,7 @@ Another classification is wheter the pattern deals with classes or objects:
 
 - [Singleton](https://github.com/fabioono25/design-patterns/blob/main/documents/singleton.md): The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is useful when you want to restric the instantiation of a class to a single object, such as a configuration manager or logging service.
 
-- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/FactoryMethod/factorymethod.md): .
+- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/documents/factory-method.md): The Factory Method Pattern is a creational design pattern that provides an interface for creating objects in a super class, but allows subclasses to alter the type of objects that will be created. It promotes loose coupling and enhances extensibility by delegating the responsibility of object creation to subclasses..
 
 - [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): .
 
