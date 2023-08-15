@@ -35,13 +35,13 @@ Another classification is wheter the pattern deals with classes or objects:
 
 - [Singleton](https://github.com/fabioono25/design-patterns/blob/main/documents/singleton.md): The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is useful when you want to restric the instantiation of a class to a single object, such as a configuration manager or logging service.
 
-- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/documents/factory-method.md): The Factory Method Pattern is a creational design pattern that provides an interface for creating objects in a super class, but allows subclasses to alter the type of objects that will be created. It promotes loose coupling and enhances extensibility by delegating the responsibility of object creation to subclasses..
+- [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/documents/factory-method.md): The Factory Method pattern defines an interface for creating objects but allows subclasses to decide which class to instantiate. This pattern is useful when you have a class with multiple subclasses and want to delegate the responsibility of object creation to the subclasses.
 
-- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): .
+- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. It's useful when you need to create families of objects that should be used together, like creating different components of a GUI toolkit.
 
-- [Builder](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Builder/builder.md): .
+- [Builder](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Builder/builder.md): The Builder pattern separates the construction of a complex object from its representation. It allows the same construction process to create different representations of the object. This pattern is useful when you want to create complex objects step by step, providing flexibility in the construction process.
 
-- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Prototype/prototype.md): .
+- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Prototype/prototype.md): The Prototype pattern involves creating a new object by copying an existing object (prototype) rather than creating a new instance from scratch. It's useful when the cost of creating a new object is higher, and you want to achieve performance improvements by copying existing instances.
 
 &nbsp;
 &nbsp;

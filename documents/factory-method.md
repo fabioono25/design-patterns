@@ -78,7 +78,7 @@ The Factory Method Pattern was created to address the need for a flexible and ex
 
 #### Simple Implementation
 
-The following example demonstrates a simple implementation of the Factory Method pattern:
+In this example, the Creator class declares the factory method FactoryMethod(), which subclasses ConcreteCreatorA and ConcreteCreatorB override to create instances of ConcreteProductA and ConcreteProductB, respectively:
 
 ```csharp
 public interface IProduct
@@ -122,3 +122,8 @@ public class ConcreteCreatorB : Creator
         return new ConcreteProductB();
     }
 }
+
+<p>&nbsp;</p>
+
+### Links
+
