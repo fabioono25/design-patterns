@@ -37,55 +37,58 @@ Another classification is wheter the pattern deals with classes or objects:
 
 - [Factory Method](https://github.com/fabioono25/design-patterns/blob/main/documents/factory-method.md): The Factory Method pattern defines an interface for creating objects but allows subclasses to decide which class to instantiate. This pattern is useful when you have a class with multiple subclasses and want to delegate the responsibility of object creation to the subclasses.
 
-- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/AbstractFactory/abstractfactory.md): The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. It's useful when you need to create families of objects that should be used together, like creating different components of a GUI toolkit.
+- [Abstract Factory](https://github.com/fabioono25/design-patterns/blob/main/documents/abstract-factory.md): The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. It's useful when you need to create families of objects that should be used together, like creating different components of a GUI toolkit.
 
-- [Builder](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Builder/builder.md): The Builder pattern separates the construction of a complex object from its representation. It allows the same construction process to create different representations of the object. This pattern is useful when you want to create complex objects step by step, providing flexibility in the construction process.
+- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/documents/prototype.md): The Prototype pattern involves creating a new object by copying an existing object (prototype) rather than creating a new instance from scratch. It's useful when the cost of creating a new object is higher, and you want to achieve performance improvements by copying existing instances.
 
-- [Prototype](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Creational/Prototype/prototype.md): The Prototype pattern involves creating a new object by copying an existing object (prototype) rather than creating a new instance from scratch. It's useful when the cost of creating a new object is higher, and you want to achieve performance improvements by copying existing instances.
+- [Builder](https://github.com/fabioono25/design-patterns/blob/main/documents/builder.md): The Builder pattern separates the construction of a complex object from its representation. It allows the same construction process to create different representations of the object. This pattern is useful when you want to create complex objects step by step, providing flexibility in the construction process.
 
-&nbsp;
-&nbsp;
-
-## Behavioral Design Patterns
-
-- [Chain of Responsibility](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/ChainOfResponsibility/chainofresponsibility.md): Le
-
-- [Command](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Command/command.md): Le
-
-- [Iterator](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Iterator/iterator.md): Le
-
-- [Mediator](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Mediator/mediator.md): Le
-
-- [Memento](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Memento/memento.md): Le
-
-- [Observer](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Observer/observer.md): Le
-
-- [State](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/State/state.md): Lets an object alter its behavior when its **internal state** changes. This pattern is close to the concept of **finite-state machine**.
-
-- [Strategy](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Strategy/strategy.md): Lets you define a **family of algorithms**, put each of them into **separate class**, and make **their objects interchangeable**.
-
-- [Template Method](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/TemplateMethod/templatemethod.md): L
-
-- [Visitor](https://github.com/fabioono25/design-patterns/blob/main/design-patterns/GangOfFour/Behavioral/Visitor/visitor.md): L
 
 &nbsp;
 &nbsp;
 
 ## Structural Design Patterns
 
-- [Adapter](): .
+- [Adapter](https://github.com/fabioono25/design-patterns/blob/main/documents/adapter.md): The Adapter Pattern allows objects with incompatible interfaces to work together by providing a wrapper that converts one interface into another. It is used when existing classes need to work with new or third-party classes without modifying their source code.
 
-- [Bridge]()
+- [Proxy](https://github.com/fabioono25/design-patterns/blob/main/documents/proxy.md): The Proxy Pattern provides a surrogate or placeholder for another object to control access, add behavior, or defer expensive operations. It is used to control access to objects, add additional behavior, or delay expensive operations until necessary.
 
-- [Composite]()
+- [Composite](https://github.com/fabioono25/design-patterns/blob/main/documents/composite.md): The Composite Pattern composes objects into tree structures to represent part-whole hierarchies. It treats individual objects and compositions of objects uniformly. It is used to represent hierarchical structures and enables clients to treat individual objects and compositions uniformly.
 
-- [Decorator]()
+- [Bridge](https://github.com/fabioono25/design-patterns/blob/main/documents/bridge.md):  The Bridge Pattern separates the abstraction (interface) from its implementation, allowing them to vary independently. It is used to decouple an abstraction from its implementation, enabling both to evolve independently.
 
-- [Facade]()
+- [Decorator](https://github.com/fabioono25/design-patterns/blob/main/documents/decorator.md): The Decorator Pattern attaches additional responsibilities to objects dynamically by wrapping them in decorator objects. It is used to add behavior or responsibilities to objects without altering their code, providing a flexible alternative to subclassing.
 
-- [Flyweight]()
+- [Facade](https://github.com/fabioono25/design-patterns/blob/main/documents/facade.md): The Facade Pattern provides a simplified interface to a complex system of classes, acting as a high-level entry point. It is used to provide a unified and simplified interface to a set of interfaces in a subsystem.
 
-- [Proxy]()
+- [Flyweight](https://github.com/fabioono25/design-patterns/blob/main/documents/flyweight.md): The Flyweight Pattern shares common state (intrinsic) among multiple objects to reduce memory usage and improve performance. It is used to manage a large number of fine-grained objects efficiently, sharing common state to reduce memory overhead.
+
+&nbsp;
+&nbsp;
+
+## Behavioral Design Patterns
+
+- [Observer](https://github.com/fabioono25/design-patterns/blob/main/documents/observer.md): The Observer Pattern defines a dependency between objects so that when one object changes state, its dependents (observers) are notified and updated automatically. It is used to establish a one-to-many relationship between objects, allowing multiple objects to be informed of changes to a subject.
+
+- [Chain of Responsibility](https://github.com/fabioono25/design-patterns/blob/main/documents/chain-of-resposibility.md): The Chain of Responsibility Pattern allows multiple objects to handle a request without explicitly specifying which object should process it. It forms a chain where each object in the chain has a chance to process the request or pass it to the next object. It is used to achieve loose coupling between sender and receiver objects, enabling multiple objects to process a request without the sender needing to know the exact processing sequence.
+
+- [Command](https://github.com/fabioono25/design-patterns/blob/main/documents/command.md): The Command Pattern encapsulates a request as an object, allowing for parameterization of clients with different requests, queuing of requests, and logging of command history. It is used to decouple the sender of a request from its receiver, enabling flexible command processing, undo/redo functionality, and dynamic behavior changes.
+
+- [Iterator](https://github.com/fabioono25/design-patterns/blob/main/documents/iterator.md): The Iterator Pattern provides a way to access elements of a collection sequentially without exposing its underlying representation. It is used to traverse elements of a collection without exposing its structure, enabling uniform iteration across different types of collections.
+
+- [Mediator](https://github.com/fabioono25/design-patterns/blob/main/documents/mediator.md): The Mediator Pattern defines an object that encapsulates communication between a set of objects (colleagues), allowing them to interact without direct references to each other. It is used to centralize communication and reduce coupling between objects that interact frequently, promoting better maintainability and extensibility.
+
+- [Memento](https://github.com/fabioono25/design-patterns/blob/main/documents/memento.md): The Memento Pattern captures and restores an object's internal state, providing the ability to revert an object to a previous state. It is used to implement undo/redo functionality, versioning, and state management in applications.
+
+- [State](https://github.com/fabioono25/design-patterns/blob/main/documents/state.md): The State Pattern allows an object to change its behavior when its internal state changes. It encapsulates different behaviors in separate state objects and delegates the behavior to the current state. It is used to manage an object's behavior based on its state, reducing complex conditional statements and improving maintainability.
+
+- [Strategy](https://github.com/fabioono25/design-patterns/blob/main/documents/strategy.md): The Strategy Pattern defines a family of algorithms, encapsulates each algorithm, and makes them interchangeable. It allows a client to choose an algorithm from a family of algorithms dynamically. It is used to provide flexibility in selecting and switching between different algorithms or strategies at runtime.
+
+- [Template Method](https://github.com/fabioono25/design-patterns/blob/main/documents/template-method.md): The Template Method Pattern defines the structure of an algorithm in a base class, with specific steps deferred to subclasses. It allows subclasses to override or extend parts of the algorithm. It is used to create reusable algorithm templates, enabling customization of specific steps by subclasses.
+
+- [Visitor](https://github.com/fabioono25/design-patterns/blob/main/documents/visitor.md): The Visitor Pattern lets you add further operations to objects without having to modify them. It separates the operations from the object structure. It is used to perform various operations on a set of elements without altering their classes, promoting extensibility and avoiding class proliferation.
+
+- [Interpreter](https://github.com/fabioono25/design-patterns/blob/main/documents/interpreter.md): The Interpreter Pattern defines a language's grammar as a set of classes and provides an interpreter to evaluate sentences in the language. It is used to solve problems related to parsing and interpreting languages, such as expressions, queries, or domain-specific languages.
 
 &nbsp;
 &nbsp;
