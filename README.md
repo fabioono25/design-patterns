@@ -99,7 +99,7 @@ Another classification is wheter the pattern deals with classes or objects:
 
 Enterprise patterns are designa patterns that address high-level architectural concerns that are applied in complex enterprise-level applications. These patterns focus, in general, on dealing with issues related to scalability, integration, distribution, managing high volumes of data.
 
-- [Interpreter](https://github.com/fabioono25/design-patterns/blob/main/documents/enterprise/specification.md): The Specification Pattern is a behavioral pattern used to define a set of criteria that can be used to filter and match objects. It provides a way to encapsulate complex conditions or rules for selecting objects in a clean and reusable manner. It is commonly used in the context of Domain-driven design.
+- [Specification](https://github.com/fabioono25/design-patterns/blob/main/documents/enterprise/specification.md): The Specification Pattern is a behavioral pattern used to define a set of criteria that can be used to filter and match objects. It provides a way to encapsulate complex conditions or rules for selecting objects in a clean and reusable manner. It is commonly used in the context of Domain-driven design.
 
 <!-- 
 ## Observer Pattern
