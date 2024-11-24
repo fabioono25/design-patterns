@@ -42,6 +42,7 @@ The Factory Method Pattern was created to address the need for a flexible and ex
 - **Extensibility**: New product classes can be easily added without modifying existing code.
 - **Single Responsibility Principle (SRP)**: Creator classes focus on object creation, adhering to the SRP.
 - **Encapsulation**: The creation process is encapsulated in the factory method, promoting encapsulation.
+- **Open/Closed Principle (OCP)**: The design allows the system to be open to extension (adding new product types) but closed to modification (existing code does not need to change).
 
 &nbsp;
 
@@ -71,6 +72,7 @@ The Factory Method Pattern was created to address the need for a flexible and ex
 
 - **Direct Instantiation**: In simpler scenarios, direct instantiation of objects may suffice if extensibility requirements are minimal.
 - **Builder Pattern**: When the object creation process involves multiple steps or parameters, the Builder pattern might provide a more flexible solution.
+- **Simple Factory**: If the primary goal is to centralize object creation without the need for extensibility or subclassing, a Simple Factory can act as a straightforward alternative, encapsulating object creation in a single method or class.
 
 &nbsp;
 
@@ -122,8 +124,16 @@ public class ConcreteCreatorB : Creator
         return new ConcreteProductB();
     }
 }
-
+```
 <p>&nbsp;</p>
 
 ### Links
+
+- [Head First - Factory Method Pattern Explained](https://www.youtube.com/watch?v=EcFVTgRHJLM)
+
+- [A good video about Factory Method Pattern](https://www.youtube.com/watch?v=EdFq_JIThqM)
+
+- [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)
+
+- [Source Making](https://sourcemaking.com/design_patterns/factory_method)
 
